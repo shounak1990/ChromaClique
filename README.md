@@ -9,8 +9,8 @@ Our approach can be used to:
 
 
 ######Overview
- - [Installation](https://github.com/shounak1990/ChromaClique/edit/master/README.md#install)
- - [Contact](https://github.com/shounak1990/ChromaClique/edit/master/README.md#contact)
+ - [Installation](https://github.com/shounak1990/ChromaClique/master/README.md#install)
+ - [Contact](https://github.com/shounak1990/ChromaClique/master/README.md#contact)
 
 ### INSTALL
 ######Dependencies
