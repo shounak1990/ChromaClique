@@ -1,8 +1,6 @@
-<h1 align="center">
-<img src="https://github.com/armintoepfer/haploclique/blob/master/haploclique_logo.png?raw=true" alt="HaploClique"/></h1>
-***
-<p align="center">Dr. Armin Töpfer, <a href="http://www.armintoepfer.com">armintoepfer.com</a></p>
-***
+# ChromaClique
+
+ChromaClique finds nucleosome profiles from NOMe-sequencing reads
 We present a novel method to reconstruct the structure of a viral quasispecies from NGS data.
 Our approach can be used to:
  - reconstruct local error-corrected haplotypes and estimate their abundance
@@ -10,22 +8,13 @@ Our approach can be used to:
  - detect large deletions and insertions from paired-end data.
 
 
-######Reference implementation of: 
-Armin Töpfer, Tobias Marschall, Rowena A. Bull, Fabio Luciani, Alexander Schönhuth, and Niko Beerenwinkel.  
-<b>[Viral quasispecies assembly via maximal clique finding](http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003515)</b>  
-<i>PLOS Computational Biology</i>, 2014.
-
 ######Overview
- - [Installation](https://github.com/armintoepfer/haploclique/edit/master/README.md#install)
- - [Error correction](https://github.com/armintoepfer/haploclique/edit/master/README.md#error-correction)
- - [Quasispecies assembly](https://github.com/armintoepfer/haploclique/edit/master/README.md#quasispecies-assembly-of-long-range-haplotypes)
- - [Indel prediction](https://github.com/armintoepfer/haploclique/edit/master/README.md#structural-variation)
- - [Contact](https://github.com/armintoepfer/haploclique/edit/master/README.md#contact)
+ - [Installation](https://github.com/shounak1990/ChromaClique/edit/master/README.md#install)
+ - [Contact](https://github.com/shounak1990/ChromaClique/edit/master/README.md#contact)
 
 ### INSTALL
 ######Dependencies
-Download [ConsensusFixer](https://github.com/armintoepfer/ConsensusFixer/releases) and [InDelFixer](https://github.com/armintoepfer/InDelFixer/releases) and export its parent directory as $SAF enviroment variable.  
-HaploClique depends on [boost](http://www.boost.org/), [gnu parallel](http://www.gnu.org/software/parallel/), and [cmake](http://www.cmake.org/). You can install them with a package manager of your choice.
+ChromaClique depends on [boost](http://www.boost.org/), [gnu parallel](http://www.gnu.org/software/parallel/), and [cmake](http://www.cmake.org/). You can install them with a package manager of your choice.
 
 ######Ubuntu:  
 ```
@@ -39,13 +28,13 @@ port install cmake boost parallel
 ```
 
 ######Windows:
-HaploClique has not been tested on Windows. The scripts depend on the bash shell, awk, and sed.  
+ChromaClique has not been tested on Windows. The scripts depend on the bash shell, awk, and sed.  
 
 ######Installation routine:
 If you want to install HaploClique to a non-standard directory, change it with `cmake -DCMAKE_INSTALL_PREFIX=<prefix-path> ..`
 ```bash
-git clone https://github.com/armintoepfer/haploclique
-cd haploclique
+git clone https://github.com/shounak1990/ChromaClique
+cd ChromaClique
 git submodule init && git submodule update
 mkdir build
 cd build
@@ -62,7 +51,6 @@ make install
  
 ###Contact
 ```
-Armin Töpfer
-armin.toepfer (at) gmail.com
-http://www.armintoepfer.com
+Shounak Chakraborty
+shounak.chakraborty1990 (at) gmail.com
 ```
