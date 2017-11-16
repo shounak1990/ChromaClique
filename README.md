@@ -38,14 +38,16 @@ cmake ..
 make
 make install
 ```
+### Manual
+Please visit ... for the manual.
 
 ### Contributions
  - [Armin Töpfer](http://www.armintoepfer.com)  
  - [Tobias Marschall](https://bioinf.mpi-inf.mpg.de/homepage/index.php?&account=marschal)
  - Bernhard Lang
  - Marcel Meyerheim
- 
-###Contact
+
+Contact
 ```
 Shounak Chakraborty
 shounak.chakraborty1990 (at) gmail.com
