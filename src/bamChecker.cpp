@@ -1,5 +1,27 @@
-/*bamFileChecker- Checks if two adjacent reads are first and second mate of a read
+/*Copyright 2017 Shounak Chakraborty
+ * 
+ * This file is part of ChromaClique.
+ *
+ * ChromaClique is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * ChromaClique is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with ChromaClique.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ *
+ *
+ *bamFileChecker- Checks if two adjacent reads are first and second mate of a read
  *                Ensure that the number of first mates is equal to the number of second mates
+ *
+ *
+ *Usage:
  *
  *Requires the bamfile to be sorted by name -> samtools sort -n bamFile.bam > sortedBamFile.bam
  *

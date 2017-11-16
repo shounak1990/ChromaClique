@@ -1,20 +1,5 @@
-/*Copyright 2017 Shounak Chakraborty
- * 
- * This file is part of ChromaClique.
- *
- * ChromaClique is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * ChromaClique is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with ChromaClique.  If not, see <http://www.gnu.org/licenses/>.
-*/
+/* Author: Shounak Chakraborty
+ */
 
 #include <math.h>
 #include <boost/math/distributions/normal.hpp>
@@ -204,6 +189,9 @@ bool NoMeEdgeCalculator::edgeBetween(const AlignmentRecord & ap1, const Alignmen
     //For normal edge criterion
     if(((ap1.getCode1().find("C") != std::string::npos) || (ap1.getCode1().find("O") != std::string::npos)) || ((ap1.getCode2().find("C") != std::string::npos) || (ap1.getCode2().find("O") != std::string::npos))){
         if(((ap2.getCode1().find("C") != std::string::npos) || (ap2.getCode1().find("O") != std::string::npos)) || ((ap2.getCode2().find("C") != std::string::npos) || (ap2.getCode2().find("O") != std::string::npos))){
+            cout<<"---------------------------------"<<endl;
+            cout<<ap1.getName()<<endl;
+            cout<<ap2.getName()<<endl;
             if(scoreReads(ap1,ap2, isClique,numGCAllowedPos,ct)){
                 return true;
             }else{
@@ -484,6 +472,10 @@ double NoMeEdgeCalculator::scoreSequences(std::string code1,std::string qual1, s
    double score = hmmProbability->calculateProbability();
    double prob = nomeParam;
 
+   cout<<"code1: "<<compareString1<<endl;
+   cout<<"code2: "<<compareString2<<endl;
+   cout<<"score: "<<score<<endl;
+   cout<<"---------------------------------"<<endl;
    if(score == -1000){//meaning that there is something wrong with the codes
        return -1;
    }else{
