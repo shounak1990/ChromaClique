@@ -39,7 +39,7 @@ make
 make install
 ```
 ### Manual
-Please visit ... for the manual.
+Please visit https://shounak1990.github.io/chromaclique/manual.html for the manual.
 
 ### Contributions
  - [Armin Töpfer](http://www.armintoepfer.com)  
