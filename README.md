@@ -1,12 +1,6 @@
 # ChromaClique
 
-ChromaClique finds nucleosome profiles from NOMe-sequencing reads
-We present a novel method to reconstruct the structure of a viral quasispecies from NGS data.
-Our approach can be used to:
- - reconstruct local error-corrected haplotypes and estimate their abundance
- - assemble full-length viral haplotypes
- - detect large deletions and insertions from paired-end data.
-
+ChromaClique is a tool for the reconstruction of nucleosome profiles of individual or subpopulations of cells. Data from NOMe-sequencing  is used by ChromaClique for deconvolution of different nucleosome profiles (chromatypes) from cell subpopulations of one NOME-seq measurement. ChromaClique uses a maximal clique enumeration algorithm on a newly defined NOMe read graph that is able to group reads according to their nucleosome profiles.
 
 ### INSTALL
 Dependencies
