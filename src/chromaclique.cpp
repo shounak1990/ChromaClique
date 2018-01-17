@@ -109,7 +109,7 @@ bool read_mean_and_sd(const string& filename, double* mean, double* sd) {
 
 //""
 static std::string readReferenceFile(std::string referencePath){
-    //std::vector<string> reference;
+    cout<<"<ReferenceFile> "<<referencePath<<endl;
     std::string reference = "";
     std::ifstream input(referencePath);
     std::string line="";
@@ -205,7 +205,7 @@ std::unordered_map<int, double> readSwitchRateFile(string filePath){
     std::ifstream input(filePath);
     std::string line="";
     if(!input.good()){
-            std::cerr << "Error opening "<< std::endl;
+            std::cerr << "Error opening transition rate file "<< std::endl;
             //return reference;
     }
     while( std::getline( input, line ).good() ){
@@ -367,11 +367,13 @@ int main(int argc, char* argv[]) {
     CliqueCollector collector(lw);
     CliqueFinder* clique_finder;
 
-    if (args["bronkerbosch"].asBool()) {
-        clique_finder = new BronKerbosch(*edge_calculator, collector, lw);
-    } else {
-        clique_finder = new CLEVER(*edge_calculator, collector, lw);
-    }
+//    if (args["bronkerbosch"].asBool()) {
+//        clique_finder = new BronKerbosch(*edge_calculator, collector, lw);
+//    } else {
+//        clique_finder = new CLEVER(*edge_calculator, collector, lw);
+//    }
+
+    clique_finder = new CLEVER(*edge_calculator, collector, lw);
     if (indel_edge_calculator != 0) {
         clique_finder->setSecondEdgeCalculator(indel_edge_calculator);
     }
