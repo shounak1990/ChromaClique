@@ -38,7 +38,7 @@ Please visit https://shounak1990.github.io/chromaclique/manual.html for the manu
 ### Contributions
  - [Marcel Schulz](https://bioinf.mpi-inf.mpg.de/homepage/index.php?&account=mschulz)  
  - [Tobias Marschall](https://bioinf.mpi-inf.mpg.de/homepage/index.php?&account=marschal)
- - [Stean Canzar](http://www.genzentrum.uni-muenchen.de/research-groups/canzar/group-members/canzar-stefan/index.html)
+ - [Stefan Canzar](http://www.genzentrum.uni-muenchen.de/research-groups/canzar/group-members/canzar-stefan/index.html)
  - [Shounak Chakraborty](http://www.genzentrum.uni-muenchen.de/research-groups/canzar/group-members/chakraborty-shounak/index.html)
 
 Contact
