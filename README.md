@@ -2,6 +2,16 @@
 
 ChromaClique is a tool for the reconstruction of nucleosome profiles of individual or subpopulations of cells. Data from NOMe-sequencing  is used by ChromaClique for deconvolution of different nucleosome profiles (chromatypes) from cell subpopulations of one NOME-seq measurement. ChromaClique uses a maximal clique enumeration algorithm on a newly defined NOMe read graph that is able to group reads according to their nucleosome profiles.
 
+### Paper
+
+The ChromaClique algorithm is described in this paper:
+
+[Chromatyping: Reconstructing Nucleosome Profiles from NOMe Sequencing Data](https://link.springer.com/chapter/10.1007%2F978-3-319-89929-9_2)  
+Shounak Chakraborty, Stefan Canzar, Tobias Marschall, Marcel H. Schulz  
+Proceedings of **RECOMB 2018**, Pages 21-36
+
+Please cite this paper if you use ChromaClique in your research.
+
 ### INSTALL
 Dependencies
 ChromaClique depends on [boost](http://www.boost.org/), [gnu parallel](http://www.gnu.org/software/parallel/), and [cmake](http://www.cmake.org/). You can install them with a package manager of your choice.
@@ -36,6 +46,7 @@ make install
 Please visit https://shounak1990.github.io/chromaclique/manual.html for the manual.
 
 ### Contributions
+ - The ChromaClique implementation was derived from [HaploClique](https://github.com/cbg-ethz/haploclique)
  - [Marcel Schulz](https://bioinf.mpi-inf.mpg.de/homepage/index.php?&account=mschulz)  
  - [Tobias Marschall](https://bioinf.mpi-inf.mpg.de/homepage/index.php?&account=marschal)
  - [Stefan Canzar](http://www.genzentrum.uni-muenchen.de/research-groups/canzar/group-members/canzar-stefan/index.html)
